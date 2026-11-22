@@ -54,7 +54,7 @@ public class LocationController {
     // the Driver Service calls this API.
     // LocationService removes the driver's location from Redis GEO
     // so the Matching Service does not consider that driver for new rides.
-    @DeleteMapping("/drivers/{driverID")
+    @DeleteMapping("/drivers/{driverID}")
     public ResponseEntity<String> removeDriver(@PathVariable String driverID){
         locationService.removeDriver(driverID);
         return ResponseEntity.ok("Driver Remove Successfully");
