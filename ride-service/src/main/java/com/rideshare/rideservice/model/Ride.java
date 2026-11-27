@@ -29,21 +29,27 @@ public class Ride {
     @Column(nullable = false)
     private String driverId;
 
+    // Latitude coordinate of the ride pickup location
     @Column(nullable = false)
     private double pickupLatitude;
 
+    // Longitude coordinate of the ride pickup location
     @Column(nullable = false)
     private double pickupLongitude;
 
+    // Full address of the pickup location
     @Column(nullable = false)
     private String pickupAddress;
 
+    // Latitude of the drop-off location
     @Column(nullable = false)
     private double dropLatitude;
 
+    // Longitude of the drop-off location
     @Column(nullable = false)
     private double dropLongitude;
 
+    // Full address of the drop-off location
     @Column(nullable = false)
     private String dropAddress;
 
